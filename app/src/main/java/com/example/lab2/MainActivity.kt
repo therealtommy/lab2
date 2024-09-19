@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         var i: Int = 1
         var res:Double = 0.0
 
-        if (x != null && n != null)
+        if (x != null && n != null && n != 0)
         {
             for (i in 1..n)
             {
@@ -43,10 +43,8 @@ class MainActivity : AppCompatActivity() {
 
         }
         else{
-
+            Toast.makeText(this, "Вы не ввели число X или N, либо число N = 0", Toast.LENGTH_LONG).show()
         }
-
-
         }
     }
 }
