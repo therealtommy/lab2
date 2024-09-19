@@ -1,10 +1,14 @@
 package com.example.lab2
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.widget.EditText
+import android.widget.Toast
+import kotlin.math.pow
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,4 +21,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+    val editTextNumber = findViewById<EditText>(R.id.editTextNumber)
+    val editTextNumber2 = findViewById<EditText>(R.id.editTextNumber2)
+    val buttonCalculate = findViewById<Button>(R.id.button)
+
+
 }
